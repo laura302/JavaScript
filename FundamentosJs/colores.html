@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colores Background</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .container {
+            width: 300px;
+            height: 250px;
+            border-radius: 10px;
+            background-color: hotpink;
+            text-align: center;
+            padding: 10px;
+
+        }
+        button {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(240, 166, 190);
+            border-radius: 35%;
+            border: none;
+        }
+        button.haver {
+            background-color: thistle;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Colores Background RGB</h1>
+        <h2></h2>
+        <button onclick="setColor()">Set Color</button>
+    </div>
+    <script src="./coloresbg.js"></script>
+</body>
+</html>

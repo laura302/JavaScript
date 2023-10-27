@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis proyectos JavaScript</title>
+        <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Dancing+Script&display=swap" rel="stylesheet"> 
+    <style>
+         body {
+            margin: 40px; 
+        }
+        h1 {
+            font-family: 'Agbalumo', sans-serif;
+            font-size: 40px;
+
+        }
+        
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            width: 100vw; 
+            height: 95vh;
+            background-color: black;
+            display: grid;
+            place-items: center;
+            box-sizing: border-box;
+            color: rgb(255, 255, 255);
+            margin: 0; 
+            padding: 0; 
+            font-size: 10px;
+            
+        }
+        * {
+            box-sizing: border-box;
+        }
+        nav ul li a {
+            text-decoration: none; /* Elimina el subrayado */
+            
+        }
+        nav {
+            width: 100%;
+            height: 20rem; 
+            background-color: black;
+        }
+        nav ul {
+            height: 10rem;
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            margin-top: 20px;
+        }
+        nav ul li {
+            list-style: none;
+            padding: 12px;
+            position: relative;
+            z-index: 1;
+            overflow: auto;
+        }
+        ::-webkit-scrollbar {
+            display: none;
+        }
+        nav ul li::before {
+            content: "";
+            width: 25%;
+            height: 30%;
+            border-top: solid 4px purple;
+            border-left: solid 4px purple;
+            border-radius: 3px;
+            top: 0;
+            left: 0;
+            position: absolute;
+            z-index: -1;
+            transition: 0.5s ease-in-out;
+        }
+        nav ul li::after {
+            content: "";
+            width: 35%;
+            height: 30%;
+            border-bottom: solid 4px purple;
+            border-right: solid 4px purple;
+            border-radius: 5px;
+            bottom: 0;
+            right: 0;
+            position: absolute;
+            z-index: -1;
+            transition: 0.5s ease-in-out;
+            
+        }
+        nav ul li:hover::after, 
+        nav ul li:hover::before 
+        {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Apis JavaScript</h1>
+    <nav>
+        <ul>
+            <li><a href="./RickAndMorty/">Rick and Morty</a></li>
+            <li><a href="./ApiClima/">API de Clima</a></li>
+            <li><a href="./Animaciones/indexS.html">snake</a></li>
+            <li><a href="./Animaciones/indexM.html">Zombies</a></li>
+            <li><a href="Animaciones/IndexR.html">Rebota</a></li>
+            <li><a href="./Canvas/index.html">Dibujo</a></li>
+            <li><a href="./FundamentosJs/coloresinput.html">RGB Random</a></li>
+            <li><a href="./FundamentosJs/colores.html">RGBA</a></li>
+            <li><a href="./FundamentosJs/tareas.html">Lista de Tareas</a></li>
+            <li><a href="./FundamentosJs/galeria.html">Galeria</a></li>
+
+        </ul>
+    </nav>
+</body>
+</html>
